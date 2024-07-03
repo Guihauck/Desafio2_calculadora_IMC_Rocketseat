@@ -1,0 +1,12 @@
+:root {
+  --color-background: #040924;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.card {
+  background-color: white;
+}
