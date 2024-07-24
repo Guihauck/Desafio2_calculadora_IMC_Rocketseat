@@ -3,7 +3,7 @@
 const form = document.querySelector("form")
 const inputWeight = document.querySelector("#weight")
 const inputHeight = document.querySelector("#height")
-const modalWrapper = document.querySelector("modal-wrapper")
+const modalWrapper = document.querySelector(".modal-wrapper")
 const modalMessage = document.querySelector(".modal .title span")
 const modalBtnClose = document.querySelector(".modal button.close")
 
