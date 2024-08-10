@@ -1,4 +1,4 @@
-export let IMC = (weight, height) => {
+export let calculateIMC = (weight, height) => {
   return (weight / (height / 100) ** 2).toFixed(2);
 }
 
