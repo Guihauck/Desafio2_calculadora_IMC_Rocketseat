@@ -1,5 +1,6 @@
 import {modal} from './modal.js'
 import { AlertError } from './alert-error.js'
+import {IMC, isNotANumber} from './utils.js'
 
 // Variáveis
 
@@ -29,12 +30,4 @@ form.onsubmit = event => {
 
   modal.message.innerText = message
   modal.open()
-}
-
-let IMC = (weight, height) => {
-  return (weight / (height / 100) ** 2).toFixed(2);
-}
-
-function isNotANumber (value) {
-   return isNaN(value) || value == ""
 }
