@@ -1,4 +1,5 @@
 import {modal} from './modal.js'
+import { AlertError } from './alert-error.js'
 
 // Variáveis
 
@@ -17,9 +18,11 @@ form.onsubmit = event => {
   const showErrorNotNumber = isNotANumber(weight) || isNotANumber(height)
 
   if (showErrorNotNumber) {
-    console.log('Existe o erro!');
+    AlertError.open()
     return;
   }
+
+  AlertError.close()
  
   const result = IMC(weight, height);
   const message = `Seu IMC é de ${result}`
